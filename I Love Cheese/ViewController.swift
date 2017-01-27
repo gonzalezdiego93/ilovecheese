@@ -12,18 +12,23 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var TheLabel: UILabel!
     
-    var TapCount = 0
+    
+    @IBOutlet weak var text1: UITextField!
+    
+    
+    @IBOutlet weak var text2: UITextField!
+    
     
     
     @IBAction func buttonTapped(_ sender: Any) {
         
-        TapCount = TapCount + 1
-        print (TapCount)
-        if TapCount >= 5{
-            TheLabel.text = "Congrats fgt, kys"
+        print(text1.text!)
+        print(text2.text!)
+        
+      
         }
         
-    }
+    
     
     
     @IBAction func buttonTapped2(_ sender: Any) {
